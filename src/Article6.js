@@ -11,13 +11,13 @@ const Article6 = () => {
                 <div className='customer-review'>
                     <h2>Customer's Review</h2>
                 </div>
-                <marquee behavior="" direction="left">
-                    <div className='customer-pic'>
-                        <img src={ireti} alt="" />
-                        <img src={olagoke} alt="" />
-                        <img src={bayo} alt="" />
-                    </div>
-                </marquee>
+
+                <div className='customer-pic'>
+                    <img src={ireti} alt="" />
+                    <img src={olagoke} alt="" />
+                    <img src={bayo} alt="" />
+                </div>
+
             </div>
         </div>
     )

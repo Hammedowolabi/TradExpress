@@ -1,38 +1,631 @@
-.App {
-  text-align: center;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.double-article{
+    background-color: #F2F2F2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.header {
+    background-color: #7C1FBF;
+    height: 100%;
+    padding-bottom: 30px;
+    position: relative;
+
+}
+
+.background-image {
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    opacity: 0.4;
+}
+
+.header-text {
+    color: white;
+}
+
+.redirect {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.play-store {
+    display: flex;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+}
+
+.apple-store {
+    display: flex;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+
+}
+
+.container p {
+    font-size: large;
+}
+
+.btn-getstarted2 {
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    color: #7C1FBF;
+    /* opacity: 1rem; */
+}
+
+.btn-getstarted {
+    width: 50%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    color: #7C1FBF;
+
+}
+
+.btn-login1 {
+    width: 50%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+
+}
+
+.dd {
+    position: relative;
+    z-index: 2;
+}
+
+/* article */
+.article-datum {
+    display: grid;
+    gap: 0px;
+    border-bottom: 1px solid #26093A;
+}
+
+#datum {
+    border-bottom: 1px solid #7C1FBF;
+    text-align: center;
+}
+
+
+
+
+/* Article2 */
+
+
+.Article2 {
+    text-align: center;
+    height: 20vh;
+    color: #26093A;
+    background-color: #F2F2F2;
+}
+
+
+/* Article3 */
+
+.Article3 {
+    text-align: center;
+    height: 130vh;
+    background-color: #F2F2F2;
+}
+
+.easymode {
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+.finance {
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 10px;
+}
+
+
+.investment {
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.seemore {
+    width: 70%;
+    height: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    color: #26093A;
+
+}
+
+/* Article 4 */
+.Article4 {
+    height: 120vh;
+    background-color: #F2F2F2;
+}
+
+.create-account {
+    display: flex;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.Cpic {
+    width: 50%;
+}
+
+.text-Article4 {
+    text-align: center;
+}
+
+.deposit {
+    display: flex;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.Dpic {
+    width: 50%;
+}
+
+.buyandcrypto {
+    display: flex;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.Bpic {
+    width: 50%;
+}
+
+/* article 5 */
+.Article5 {
+    background-color: white;
+    height: 50vh;
+}
+
+.Article5-text {
+    text-align: center;
+}
+
+.btn-article5 {
+    width: 70%;
+    height: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    background-color: #7C1FBF;
+    border: none;
+    margin-top: 50px;
+
+}
+
+.Article5logo {
+    display: flex;
+    gap: 20px;
+
+
+}
+
+/* Article6 */
+.Article6 {
+    background-color: #F2F2F2;
+    height: 100%;
+}
+
+.customer-review {
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* footer */
+
+.footer {
+    height: 50vh;
+    margin-top: 20px;
+}
+
+.Product-footer {
+    margin-top: 20px;
+    border-bottom: 1px solid #7C1FBF;
+
+}
+
+.Learn-footer {
+    margin-top: 20px;
+    border-bottom: 1px solid #7C1FBF;
+}
+
+.Contacts-footer {
+    margin-top: 20px;
+    border-bottom: 1px solid #7C1FBF;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.Company-footer {
+    display: none;
+}
+
+.Legal-footer {
+    display: none;
+}
+
+/* footer2 */
+.footer2 {
+    text-align: center;
+    background-color: #F2F2F2;
+    margin-top: 10px;
+}
+
+@media screen and (min-width:1024px) {
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .header {
+        background-color: #7C1FBF;
+        height: 100vh;
+        position: relative;
+
+
+
+    }
+
+    .Header-container {
+        display: flex;
+        gap: 25rem;
+    }
+
+    .background-image {
+        width: 55%;
+        position: absolute;
+        top: 50px;
+        opacity: 0.4;
+        right: 50px;
+    }
+
+    .header-text {
+        color: white;
+        width: 40%;
+    }
+
+    .redirect {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .container p {
+        font-size: large;
+    }
+
+    .btn-getstarted2 {
+        width: 20%;
+        height: 40px;
+        border-radius: 5px;
+        border: none;
+        color: #7C1FBF;
+
+    }
+
+    .btn-getstarted {
+        width: 200%;
+        height: 40px;
+        border-radius: 5px;
+        border: none;
+        color: #7C1FBF;
+
+    }
+
+    .btn-login1 {
+        width: 200%;
+        height: 40px;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        background: transparent;
+        border: 1px solid white;
+
+    }
+
+    .dd {
+        position: relative;
+        z-index: 2;
+        margin-top: 8rem;
+
+    }
+
+    .me-auto {
+        display: flex;
+        gap: 50px;
+    }
+
+    /* article */
+
+    .article-datum {
+        display: flex;
+        gap: 50px;
+        border-bottom: 1px solid #26093A;
+    }
+
+    #datum{
+        border-right: 1px solid #26093A;
+        border-bottom: none;
+    }
+
+    /* article 2 */
+    
+  .Article2{
+    text-align: center;
+    height: 40vh;
+    color: #26093A;
+    background-color: #F2F2F2;
+    padding-top: 60px;
+    
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+   /* article 3 */
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+    
+ .Article3 {
+    display: flex;
+    text-align: center;
+    height: 100%;
+    background-color: #F2F2F2;
   }
-  to {
-    transform: rotate(360deg);
+
+  .ff{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 20px;
+    margin-top: 50px;
+    
+
   }
+
+ .easymode {
+    border-radius: 10px;
+    background-color: white;
+    
+
 }
+
+ 
+
+
+.finance {
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+.investment {
+    border-radius: 10px;
+    background-color: white;
+}
+
+.seemore {
+    width: 20%;
+    height: 40px;
+    margin-left: 500px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    color: #26093A;
+    
+    
+
+}
+
+
+/* article 4 */
+   
+.Article4 {
+    height: 100%;
+    background-color: #F2F2F2;
+    padding-top:10rem;
+}
+
+.create-account {
+    display: flex;
+    gap: 10px;
+    margin-top: 50px;
+    
+}
+.create-account-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.Cpic {
+    width: 50%;
+}
+
+.text-Article4 {
+    text-align: center;
+}
+
+.deposit {
+    display: flex;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.deposit-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.Dpic {
+    width: 50%;
+}
+
+.buyandcrypto {
+    display: flex;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.buyandcrypto-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Bpic {
+    width: 50%;
+}
+  
+  /* article 5 */
+
+  .Article5 {
+    background-color: white;
+    height: 100%;
+    padding-top: 80px;
+}
+
+.Article5-text {
+    text-align: center;
+}
+
+.btn-article5 {
+    width: 28%;
+    height: 40px;
+    margin-left: 25rem;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    background-color: #7C1FBF;
+    border: none;
+    margin-top: 50px;
+
+}
+
+.Article5logo {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 80px;
+
+
+}
+
+
+/* article 6 */
+
+.Article6 {
+    background-color: #F2F2F2;
+    height: 100vh;
+    
+}
+
+.customer-review {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+.customer-pic{
+    display: flex;
+    gap: 30px;
+}
+
+  /* footer */
+
+  
+.footer {
+    height: 100%;
+    margin-top: 20px;
+    
+}
+
+ .rr {
+    display: flex;
+    gap: 100px;
+    
+}
+
+.Product-footer {
+    margin-top: 20px;
+    border-bottom: none;
+
+
+}
+
+.Learn-footer {
+    margin-top: 20px;
+    border-bottom:none;
+}
+
+.Contacts-footer {
+    margin-top: 20px;
+    border-bottom: none;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.Company-footer {
+    display: contents;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.Legal-footer {
+    display: contents;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ }

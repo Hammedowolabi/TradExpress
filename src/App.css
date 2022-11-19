@@ -221,13 +221,20 @@
 
 /* Article6 */
 .Article6 {
-    background-color: #F2F2F2;
+    background-color: #F2F2F2; 
     height: 100%;
 }
 
 .customer-review {
     text-align: center;
     padding-top: 20px;
+}
+.customer-pic{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+
 }
 
 /* footer */
@@ -544,11 +551,14 @@
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
+
     
 }
 .customer-pic{
     display: flex;
+    flex-direction: row;
     gap: 30px;
+    justify-content: center;
 }
 
   /* footer */
